@@ -12,3 +12,7 @@ def count_by_event(events):
         key = event["event"]
         counts[key] = counts.get(key, 0) + 1
     return counts
+
+
+def filter_by_user(events, user):
+    return [event for event in events if event["user"] == user]
