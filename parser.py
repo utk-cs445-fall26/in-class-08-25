@@ -16,3 +16,7 @@ def count_by_event(events):
 
 def filter_by_user(events, user):
     return [event for event in events if event["user"] == user]
+
+
+def filter_by_date(events, target_date):
+    return [event for event in events if event["date"] == target_date]
