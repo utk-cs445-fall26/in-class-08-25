@@ -19,4 +19,4 @@ def filter_by_user(events, user):
 
 
 def filter_by_date(events, target_date):
-    return [event for event in events if event["date"] >= target_date]
+    return [event for event in events if event["date"] == target_date]
