@@ -1,5 +1,5 @@
 import argparse
-from parser import load_events, count_by_event, filter_by_user, filter_by_date
+from trace_utils import load_events, count_by_event, filter_by_user, filter_by_date
 
 
 def main():
