@@ -6,3 +6,4 @@ date,time,user,event,target
 2026-03-02,09:22,user42,file_download,notes.txt
 2026-03-03,14:31,user17,login,
 2026-03-03,14:35,user17,file_download,budget.xlsx
+2026-03-03,14:29,user17,login_failed,

@@ -1,5 +1,5 @@
 import argparse
-from trace_utils import load_events, count_by_event, filter_by_user, filter_by_date
+from trace_utils import load_events, count_by_event, filter_by_user, filter_by_date, count_failed_logins
 
 
 def main():
@@ -14,6 +14,7 @@ def main():
     if args.date:
         events = filter_by_date(events, args.date)
 
+    print(f"Failed logins: {count_failed_logins(events)}")
     print("Event counts:")
     for event, count in sorted(count_by_event(events).items()):
         print(f"  {event}: {count}")
