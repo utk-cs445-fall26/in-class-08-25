@@ -19,6 +19,7 @@ def filter_by_user(events, user):
 
 
 def filter_by_date(events, target_date):
+    # Dates are ISO formatted, so exact string comparison is sufficient here.
     return [event for event in events if event["date"] == target_date]
 
 
